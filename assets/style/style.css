@@ -1,0 +1,63 @@
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-img {
+  opacity: 0.1;
+}
+
+.profile-icon {
+  margin-top: 30vh;
+  border-radius: 50%;
+}
+
+h1, h6 {
+  font-weight: 700;
+  color: white;
+}
+
+/* Materialize styling */
+
+.fixed-action-btn{
+  top: 50px;
+}
+
+.parallax-container {
+  height: 100vh;
+}
+
+.block {
+  min-height: 100vh;
+}
+
+.pin-top {
+  position: relative;
+}
+
+.pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed;
+}
+
+/* Materialize styling end */
+
+footer {
+  min-height: 200vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-icon {
+    width: 60vw;
+  }
+  h1 {
+    font-size: 3em;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Pawel Nawoj" />
+  <title>Pawel Nawoj portfolio</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico" />
+
+  <!-- Materialize and custom css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./assets/style/materialize.min.css" />
+  <link type="text/css" rel="stylesheet" href="./assets/style/style.css" />
+</head>
+
+<body>
+
+  <header>
+
+    <!-- side menu -->
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="https://picsum.photos/200/300">
+        </div>
+        <a href="#user"><img class="circle" src="./assets/images/profile-icon.jpg"></a>
+        <a href="#name"><span class="white-text name">Pawel Nawoj</span></a>
+        <a href="#email"><span class="white-text email">paweln993@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+
+    <!-- floating button -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large">
+        <i class="large material-icons">more_vert</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a id="scroll-top" class="btn-floating green"><i class="material-icons">arrow_upward</i></a></li>
+        <li><a href="#" data-target="slide-out" class="btn-floating blue sidenav-trigger"><i class="material-icons">menu</i></a></li>
+      </ul>
+    </div>
+
+    <!-- header image -->
+    <div class="parallax-container center-align">
+      <div class="parallax responsive-img">
+        <img class="header-img" src="./assets/images/background1.jpg">
+      </div>
+      <img class="profile-icon responsive-img center-align" src="./assets/images/profile-icon.jpg">
+      <h1>Pawel Nawoj</h1>
+      <h6>Full-stack Web Developer</h6>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Profile section -->
+    <article id="about" class="block">
+      <nav class="pushpin-demo-nav" data-target="about">
+        <div class="nav-wrapper red">
+          <a href="#!" class="brand-logo">About me</a>
+        </div>
+      </nav>
+    </article>
+
+    <!-- Portfolio section -->
+    <article id="portfolio" class="block">
+      <nav class="pushpin-demo-nav" data-target="portfolio">
+        <div class="nav-wrapper green">
+          <a href="#!" class="brand-logo">Portfolio</a>
+        </div>
+      </nav>
+    </article>
+
+    <!-- Contact section -->
+    <article id="contact" class="block">
+      <nav class="pushpin-demo-nav" data-target="contact">
+        <div class="nav-wrapper light-blue">
+          <a href="#!" class="brand-logo">Contact</a>
+        </div>
+      </nav>
+    </article>
+
+    <!-- Parallax section -->
+    <article>
+      <div class="parallax-container" style="height: 40vh;">
+        <div class="parallax responsive-img">
+          <img src="./assets/images/CPUBackground.jpg">
+        </div>
+      </div>
+      <div class="section white">
+        <div class="row container">
+          <h2 class="header">Hobbies</h2>
+          <p class="grey-text text-darken-3 lighten-3">As electronic technician I am also passionated in computers and
+            mainly tech industry.</p>
+        </div>
+      </div>
+      <div class="parallax-container" style="height: 40vh;">
+        <div class="parallax responsive-img">
+          <img src="./assets/images/MoboBackground.jpg">
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>Some Footer here</p>
+  </footer>
+
+
+
+  <!-- jQuery 3.5.1 uncompressed -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous" defer></script>
+
+  <script src="./assets/script/materialize.min.js" defer></script>
+  <script src="./assets/script/script.js" defer></script>
+</body>
+
+</html>
