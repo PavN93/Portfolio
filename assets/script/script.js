@@ -4,6 +4,7 @@ $(function() {
   $('.pushpin').pushpin();
   SetPushPin();
   $('.sidenav').sidenav();
+
   $('.fixed-action-btn').floatingActionButton({
     hoverEnabled: false,
     direction: "left",
@@ -23,6 +24,7 @@ const SetPushPin = () => {
 
 $(window).resize(function() {
   SetPushPin();
+  $('.parallax').parallax();
 });
 
 $("#scroll-top").click(function() {

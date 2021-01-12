@@ -1,19 +1,14 @@
 
-
-
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.header-img {
-  opacity: 0.1;
-}
-
 .profile-icon {
   margin-top: 30vh;
   border-radius: 50%;
+  width: 300px;
 }
 
 h1, h6 {
@@ -23,16 +18,25 @@ h1, h6 {
 
 /* Materialize styling */
 
+.pin-container {
+  height: 64px;
+}
+
 .fixed-action-btn{
-  top: 50px;
+  top: 3vh;
+  bottom: auto;
 }
 
 .parallax-container {
   height: 100vh;
 }
 
+.row {
+  margin-bottom: 0;
+}
+
 .block {
-  min-height: 100vh;
+  min-height: 20vh;
 }
 
 .pin-top {
@@ -44,7 +48,7 @@ h1, h6 {
 }
 
 .pinned {
-  position: fixed;
+  position: fixed !important;
 }
 
 /* Materialize styling end */
@@ -55,7 +59,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .profile-icon {
-    width: 60vw;
+    width: 50vw;
   }
   h1 {
     font-size: 3em;
