@@ -4,11 +4,11 @@ $(function() {
   $('.pushpin').pushpin();
   SetPushPin();
   $('.sidenav').sidenav();
-
   $('.fixed-action-btn').floatingActionButton({
     hoverEnabled: false,
     direction: "left",
   });
+  $('.slider').slider();
 });  
 
 const SetPushPin = () => {
