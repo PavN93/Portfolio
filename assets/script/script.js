@@ -1,4 +1,4 @@
-
+// Initialize material functions
 $(function() {
   $('.parallax').parallax();
   $('.pushpin').pushpin();
@@ -9,6 +9,10 @@ $(function() {
     direction: "left",
   });
   $('.slider').slider();
+  $('.tooltipped').tooltip({
+    position: "bottom",
+    enterDelay: 400
+  });
 });  
 
 const SetPushPin = () => {
@@ -22,6 +26,7 @@ const SetPushPin = () => {
   });
 };
 
+// Resetting functions on window size change
 $(window).resize(function() {
   SetPushPin();
   $('.parallax').parallax();
@@ -29,4 +34,11 @@ $(window).resize(function() {
 
 $("#scroll-top").click(function() {
   $("html, body").animate({scrollTop:0}, 1000);
-})
+});
+
+// Tooltip disappear after click
+$('.tooltipped').click(function(){ 
+  $('.tooltipped').tooltip('close');
+  $('.tooltipped').tooltip(); 
+});
+
