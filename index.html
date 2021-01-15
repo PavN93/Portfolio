@@ -24,27 +24,27 @@
     <ul id="slide-out" class="sidenav">
       <li>
         <div class="user-view">
-          <div class="background">
+          <div class="background sidenav-close">
             <img src="https://picsum.photos/200/300">
           </div>
           <a href="#user">
             <img class="circle" src="./assets/images/profile-icon.jpg">
           </a>
-          <a href="#name">
+          <!-- <a href="#name">
             <span class="white-text name">Pawel Nawoj</span>
           </a>
           <a href="#email">
             <span class="white-text email">paweln993@gmail.com</span>
-          </a>
+          </a> -->
         </div>
-      </li>
-      <li>
-        <a href="https://github.com/PavN93" target="_blank">
-          <i class="material-icons">link</i>GitHub profile</a>
       </li>
       <li>
         <a href="https://www.linkedin.com/in/pawel-nawoj-71935b1aa" target="_blank">
           <i class="material-icons">link</i>LinkedIn profile</a>
+      </li>
+      <li>
+        <a href="https://github.com/PavN93" target="_blank">
+          <i class="material-icons">link</i>GitHub profile</a>
       </li>
       <li>
         <a href="./assets/doc/Resume.pdf" target="_blank" download="Resume">Download my Resume</a>
@@ -53,10 +53,13 @@
         <div class="divider"></div>
       </li>
       <li>
-        <a class="subheader">Subheader</a>
+        <a class="subheader">Contact</a>
       </li>
       <li>
-        <a class="waves-effect" href="#!">Third Link With Waves</a>
+        <a id="copy-email" class="waves-effect tooltipped" data-tooltip="Click to copy" data-copy="paweln993@gmail.com" href="#">Email: paweln993@gmail.com</a>
+      </li>
+      <li>
+        <a id="copy-mobile" class="waves-effect tooltipped" data-tooltip="Click to copy" data-copy="07544 984095" href="#">Mobile: 07544 984095</a>
       </li>
     </ul>
 
@@ -66,7 +69,7 @@
         <i class="large material-icons tooltipped" data-tooltip="Click to expand">more_vert</i>
       </a>
       <ul>
-        <li>
+        <!-- <li>
           <a class="btn-floating red">
             <i class="material-icons">insert_chart</i>
           </a>
@@ -75,7 +78,7 @@
           <a class="btn-floating yellow darken-1">
             <i class="material-icons">format_quote</i>
           </a>
-        </li>
+        </li> -->
         <li>
           <a id="scroll-top" class="btn-floating green">
             <i class="material-icons tooltipped" data-tooltip="Back to top">arrow_upward</i>
@@ -118,15 +121,16 @@
         </nav>
       </div>
       <div class="container bio-container">
-        <p class="bio flow-text">My name is Pawel and I was born in a small town in Poland - Tarnow. That is where I spent most of
+        <p class="bio flow-text">My name is Pawel and I was born in a small town in Poland - Tarnow. That is where I
+          spent most of
           my life and 5 years ago I have moved to England. </p>
         <br />
-        <p class="bio">I graduated from high school in Tarnow with electronic specialization. My background experience
-          mostly includes working with CNC machines although I'm in the process of becoming a web developer, which
-          became my current goal for the future career.</p>
+        <p class="bio">I graduated from high school in Tarnow with with a high proficiency in electronics. My background
+          experience
+          mostly includes working with CNC machines although I'm in the process of becoming a web developer, which became my long-term goal.</p>
         <br />
         <p class="bio">I decided to start studying web development because it became one of my hobbies and I wanted to
-          combine a hobby with a profession. In my free time I also like doing sports, reading and listening about new
+          combine a hobby with a profession. In my free time I also like playing sports, reading and listening about new
           technologies and engineering.</p>
       </div>
     </article>
@@ -223,35 +227,6 @@
       </div>
     </article>
 
-    <!-- Contact section -->
-    <!-- <article id="contact" class="block brown lighten-5">
-      <div class="pin-container">
-        <nav class="pushpin-demo-nav" data-target="contact">
-          <div class="nav-wrapper amber lighten-5">
-            <a href="#!" class="brand-logo black-text">Contact</a>
-          </div>
-        </nav>
-      </div>
-      <div class="container">
-        <p class="bio">CONTACT</p>
-        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, libero illum officiis id, obcaecati
-          voluptates quia voluptatum eligendi mollitia voluptatibus fugit recusandae est fuga unde impedit consequatur
-          dolorum magnam facere, necessitatibus hic odit porro architecto corporis. Ad culpa voluptate dolorum
-          doloremque facilis rerum veniam labore non mollitia. Porro, nostrum pariatur nobis eos officia autem tempora
-          non veniam. Distinctio reprehenderit autem deleniti recusandae voluptates soluta rem explicabo voluptatibus
-          praesentium consectetur! Ea velit repellat quas dolore adipisci in optio officia totam consequatur
-          repellendus, amet veritatis. Natus nobis quisquam, consectetur facere consequuntur quis qui dolores eos
-          necessitatibus iure, repudiandae eum nisi. Sed dolores illo asperiores nam id pariatur aut voluptatem.
-          Doloribus nesciunt, accusantium labore tenetur natus ipsa magnam fugit quisquam voluptatem consectetur quaerat
-          quia aut dolorem eius temporibus minima id quas architecto a exercitationem debitis ad. Autem quam totam
-          perspiciatis aspernatur expedita ipsa reiciendis recusandae. Aliquid beatae libero non iusto assumenda ipsa
-          minus nostrum repudiandae et dolore blanditiis quisquam itaque pariatur, deserunt eaque vitae corrupti
-          possimus facere soluta aperiam ex quos amet. Fugiat odio praesentium quod nulla debitis mollitia maxime nobis
-          non, vitae distinctio quis reiciendis, aliquid error deleniti! Magni commodi quidem debitis iusto, provident
-          tenetur quae autem architecto obcaecati sunt quo vel.</p>
-      </div>
-    </article> -->
-
     <!-- Parallax section -->
     <article>
       <div class="parallax-container" style="height: 40vh;">
@@ -269,21 +244,41 @@
               <tbody>
                 <tr>
                   <td>
-                    <a class="waves-effect waves-light btn-small"><i class="material-icons left">link</i>LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/pawel-nawoj-71935b1aa" target="_blank"
+                      class="waves-effect waves-light btn-small red darken-1"><i
+                        class="material-icons left">link</i>LinkedIn</a>
                   </td>
-                  <td>Visit my linkedin profile to get more details about my background</td>
+                  <td>Visit my LinkedIn profile to get more details about my background</td>
                 </tr>
                 <tr>
-                  <td><a class="waves-effect waves-light btn-small"><i class="material-icons left">link</i>GitHub</a></td>
+                  <td><a href="https://github.com/PavN93" target="_blank"
+                      class="waves-effect waves-light btn-small red darken-1"><i
+                        class="material-icons left">link</i>GitHub</a></td>
                   <td>See my GitHub page to find all of my repositories</td>
                 </tr>
                 <tr>
-                  <td><a href="./assets/doc/Resume.pdf" target="_blank" download="Resume" class="waves-effect waves-light btn-small"><i class="material-icons left">download</i>Download</a></td>
-                  <td>My resume is available for downloadning</td>
+                  <td><a href="./assets/doc/Resume.pdf" target="_blank" download="Resume"
+                      class="waves-effect waves-light btn-small red darken-1"><i
+                        class="material-icons left">download</i>Download</a></td>
+                  <td>My resume is available for downloading</td>
                 </tr>
               </tbody>
             </table>
-            <br/>
+            <p>Details for direct contact</p>
+            <div class="divider"></div>
+            <table class="highlight">
+              <tbody>
+                <tr>
+                  <td>Email:</td>
+                  <td>07544 984095</td>
+
+                </tr>
+                <tr>
+                  <td>Mobile:</td>
+                  <td>paweln993@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -296,8 +291,31 @@
 
   </main>
 
-  <footer>
-    <p>Some Footer here</p>
+  <footer class="page-footer blue darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Thanks to</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="https://materializecss.com/">MaterializeCSS</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="https://www.pexels.com/">Pexels</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright
+      </div>
+    </div>
   </footer>
 
 
