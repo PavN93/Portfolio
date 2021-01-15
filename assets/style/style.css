@@ -27,6 +27,10 @@ h1, h6 {
   margin: 0;
 }
 
+#about img {
+  max-width: 150px;
+}
+
 .section-head {
   margin: auto;
   /* height: 64px; */
@@ -100,11 +104,18 @@ h1, h6 {
 }
 
 
-
 /* Materialize styling end */
 
 footer {
   min-height: 20vh;
+}
+
+.footer-link {
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #fff3e0 !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -113,6 +124,12 @@ footer {
   }
   h1 {
     font-size: 3em;
+  }
+
+}
+@media only screen and (max-width: 450px) {
+  #about img {
+    max-width: 100px;
   }
 }
 
