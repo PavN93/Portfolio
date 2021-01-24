@@ -10,14 +10,17 @@
   <!-- favicon -->
   <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico" />
 
-  <!-- Materialize and custom css -->
+  <!-- Animate css -->
+  <link type="text/css" rel="stylesheet" href="./assets/style/aos.css" />
+
+  <!-- Materialize css -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="./assets/style/materialize.min.css" />
+
   <link type="text/css" rel="stylesheet" href="./assets/style/style.css" />
 </head>
 
 <body>
-
   <header>
 
     <!-- side menu -->
@@ -50,15 +53,17 @@
         <a class="subheader">Contact</a>
       </li>
       <li>
-        <a id="copy-email" class="waves-effect tooltipped" data-tooltip="Click to copy" data-copy="paweln993@gmail.com" href="#">Email: paweln993@gmail.com</a>
+        <a id="copy-email" class="waves-effect tooltipped" data-tooltip="Click to copy" data-copy="paweln993@gmail.com"
+          href="#">Email: paweln993@gmail.com</a>
       </li>
       <li>
-        <a id="copy-mobile" class="waves-effect tooltipped" data-tooltip="Click to copy" data-copy="07544 984095" href="#">Mobile: 07544 984095</a>
+        <a id="copy-mobile" class="waves-effect tooltipped" data-tooltip="Click to copy" data-copy="07544 984095"
+          href="#">Mobile: 07544 984095</a>
       </li>
     </ul>
 
     <!-- floating button -->
-    <div class="fixed-action-btn">
+    <div class="fixed-action-btn" data-aos="flip-right" data-aos-duration="1000">
       <a class="btn-floating btn-large red darken-1">
         <i class="large material-icons tooltipped" data-tooltip="Click to expand">more_vert</i>
       </a>
@@ -91,12 +96,13 @@
       <div class="parallax responsive-img">
         <img src="./assets/images/background1.jpg">
       </div>
-      <img class="profile-icon responsive-img center-align" src="./assets/images/profile-icon.jpg">
+      <!-- profile icon -->
+      <img data-aos="fade-down" data-aos-duration="500" class="profile-icon responsive-img center-align" src="./assets/images/profile-icon.jpg">
       <div>
-        <h1>Pawel Nawoj</h1>
+        <h1 data-aos="fade-up" data-aos-duration="500">Pawel Nawoj</h1>
       </div>
       <div>
-        <h6>Full-stack Web Developer</h6>
+        <h6 data-aos="fade-up" data-aos-duration="1300">Full-stack Web Developer</h6>
       </div>
     </div>
   </header>
@@ -114,46 +120,52 @@
           </div>
         </nav>
       </div>
-      <div class="container bio-container z-depth-5 blue lighten-3 animated">
+      <div class="container bio-container z-depth-5 blue lighten-3" data-aos="fade-down" data-aos-easing="ease-in-out">
         <p class="bio flow-text">My name is Pawel and I was born in a small town in Poland - Tarnow. That is where I
           spent most of
           my life and 5 years ago I have moved to England. </p>
         <br />
         <p class="bio">I graduated from high school in Tarnow with with a high proficiency in electronics. My background
           experience
-          mostly includes working with CNC machines although I'm in the process of becoming a web developer, which became my long-term goal.</p>
+          mostly includes working with CNC machines although I'm in the process of becoming a web developer, which
+          became my long-term goal.</p>
         <br />
         <p class="bio">I decided to start studying web development because it became one of my hobbies and I wanted to
           combine a hobby with a profession. In my free time I also like playing sports, reading and listening about new
           technologies and engineering.</p>
         <br />
-        <p class="bio">Throughout the course I learnt a lot of new technologies. HTML, CSS and JavaScript are just the foundation, besides them I also know jQuery, node.js, express.js, mySQL and more.</p>
+        <p class="bio">Throughout the course I learnt a lot of new technologies. HTML, CSS and JavaScript are just the
+          foundation, besides them I also know jQuery, node.js, express.js, mySQL and more.</p>
       </div>
       <div class="container">
         <div class="row center-align">
           <div class="col l3 m3 s6">
             <a href="https://jquery.com/" target="_blank">
-              <img class="responsive-img" src="./assets/images/jquery-logo.png">
+              <img data-aos="fade-up" data-aos-duration="500" class="responsive-img"
+                src="./assets/images/jquery-logo.png">
             </a>
           </div>
           <div class="col l3 m3 s6">
             <a href="https://nodejs.org/en/" target="_blank">
-              <img class="responsive-img" src="./assets/images/node-logo.png">
+              <img data-aos="fade-up" data-aos-duration="800" class="responsive-img"
+                src="./assets/images/node-logo.png">
             </a>
           </div>
           <div class="col l3 m3 s6">
             <a href="https://expressjs.com/" target="_blank">
-              <img class="responsive-img" src="./assets/images/express-logo.png">
+              <img data-aos="fade-up" data-aos-duration="1100" class="responsive-img"
+                src="./assets/images/express-logo.png">
             </a>
           </div>
           <div class="col l3 m3 s6">
             <a href="https://www.mysql.com/" target="_blank">
-              <img class="responsive-img" src="./assets/images/mysql-logo.png">
+              <img data-aos="fade-up" data-aos-duration="1400" class="responsive-img"
+                src="./assets/images/mysql-logo.png">
             </a>
           </div>
         </div>
       </div>
-      <br/>
+      <br />
     </article>
 
     <!-- Portfolio section -->
@@ -171,7 +183,7 @@
         <div class="row valign-wrapper">
           <div class="col m12 l6">
             <!-- First card -->
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="./assets/images/project-scr.png">
               </div>
@@ -201,7 +213,7 @@
           </div>
           <div class="col m12 l6">
             <!-- Second card -->
-            <div class="card">
+            <div class="card" data-aos="fade-down">
               <div class="card-image waves-effect waves-block waves-light" style="height: 300px; overflow: hidden;">
                 <img class="activator" src="./assets/images/quiz-screenshot.png">
               </div>
@@ -221,9 +233,9 @@
                 <a href="https://github.com/PavN93/Online-quiz" target="_blank">Check repo</a>
               </div>
             </div>
-            
+
             <!-- Third card -->
-            <div class="card">
+            <div class="card" data-aos="fade-down" data-aos-duration="1000">
               <div class="card-image waves-effect waves-block waves-light" style="height: 300px; overflow: hidden;">
                 <img class="activator" src="./assets/images/weather-screenshot.png">
               </div>
@@ -247,7 +259,7 @@
           </div>
         </div>
       </div>
-      <br/>
+      <br />
     </article>
 
     <!-- Parallax section -->
@@ -260,48 +272,52 @@
       <div class="section grey lighten-5">
         <div class="container">
           <div class="more-section">
-            <h3>More</h3>
-            <p>To find out more details about me, please check the links listed below.</p>
-            <div class="divider"></div>
-            <table>
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="https://www.linkedin.com/in/pawel-nawoj-71935b1aa" target="_blank"
-                      class="waves-effect waves-light btn-small red darken-1"><i
-                        class="material-icons left">link</i>LinkedIn</a>
-                  </td>
-                  <td>Visit my LinkedIn profile to get more details about my background</td>
-                </tr>
-                <tr>
-                  <td><a href="https://github.com/PavN93" target="_blank"
-                      class="waves-effect waves-light btn-small red darken-1"><i
-                        class="material-icons left">link</i>GitHub</a></td>
-                  <td>See my GitHub page to find all of my repositories</td>
-                </tr>
-                <tr>
-                  <td><a href="./assets/doc/Resume.pdf" target="_blank" download="Resume"
-                      class="waves-effect waves-light btn-small red darken-1"><i
-                        class="material-icons left">download</i>Download</a></td>
-                  <td>My resume is available for downloading</td>
-                </tr>
-              </tbody>
-            </table>
-            <p>Details for direct contact</p>
-            <div class="divider"></div>
-            <table class="highlight">
-              <tbody>
-                <tr>
-                  <td>Email:</td>
-                  <td>07544 984095</td>
+            <div data-aos="fade-down">
+              <h3>More</h3>
+              <p>To find out more details about me, please check the links listed below.</p>
+              <div class="divider"></div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="https://www.linkedin.com/in/pawel-nawoj-71935b1aa" target="_blank"
+                        class="waves-effect waves-light btn-small red darken-1"><i
+                          class="material-icons left">link</i>LinkedIn</a>
+                    </td>
+                    <td>Visit my LinkedIn profile to get more details about my background</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://github.com/PavN93" target="_blank"
+                        class="waves-effect waves-light btn-small red darken-1"><i
+                          class="material-icons left">link</i>GitHub</a></td>
+                    <td>See my GitHub page to find all of my repositories</td>
+                  </tr>
+                  <tr>
+                    <td><a href="./assets/doc/Resume.pdf" target="_blank" download="Resume"
+                        class="waves-effect waves-light btn-small red darken-1"><i
+                          class="material-icons left">download</i>Download</a></td>
+                    <td>My resume is available for downloading</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div data-aos="fade-down">
+              <p>Details for direct contact</p>
+              <div class="divider"></div>
+              <table class="highlight">
+                <tbody>
+                  <tr>
+                    <td>Email:</td>
+                    <td>07544 984095</td>
 
-                </tr>
-                <tr>
-                  <td>Mobile:</td>
-                  <td>paweln993@gmail.com</td>
-                </tr>
-              </tbody>
-            </table>
+                  </tr>
+                  <tr>
+                    <td>Mobile:</td>
+                    <td>paweln993@gmail.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -314,21 +330,28 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="page-footer blue darken-4">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <!-- <div class="col l6 s12">
           <h5 class="white-text">Footer Content</h5>
           <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
+        </div> -->
+        <div class="col l4 s12">
           <h5 class="white-text">Thanks to</h5>
           <ul>
             <li>
-              <a class="orange-text text-lighten-2 footer-link" href="https://materializecss.com/" target="_blank">MaterializeCSS</a>
+              <a class="orange-text text-lighten-2 footer-link" href="https://materializecss.com/"
+                target="_blank">MaterializeCSS</a>
             </li>
             <li>
-              <a class="orange-text text-lighten-2 footer-link" href="https://www.pexels.com/" target="_blank">Pexels</a>
+              <a class="orange-text text-lighten-2 footer-link" href="https://www.pexels.com/"
+                target="_blank">Pexels</a>
+            </li>
+            <li>
+              <a class="orange-text text-lighten-2 footer-link" href="https://github.com/michalsnik/aos"
+                target="_blank">Animate On Scroll</a>
             </li>
           </ul>
         </div>
@@ -341,14 +364,16 @@
     </div>
   </footer>
 
-
-
   <!-- jQuery 3.5.1 uncompressed -->
-
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
 
+  <!-- Animate js -->
+  <script src="./assets/script/aos.js"></script>
+
+  <!-- Materialize js -->
   <script src="./assets/script/materialize.min.js"></script>
+
   <script src="./assets/script/script.js"></script>
 </body>
 

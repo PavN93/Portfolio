@@ -92,7 +92,6 @@ h1, h6 {
 
 .block {
   min-height: 20vh;
-  transition: all 1s ease;
 }
 
 .pin-top {
@@ -141,12 +140,6 @@ footer {
 
 .footer-link:hover {
   color: #fff3e0 !important;
-}
-
-.animated {
-  opacity: 0;
-  transition: all 1s ease;
-  transition-timing-function: ease;
 }
 
 @media only screen and (max-width: 600px) {

@@ -13,20 +13,8 @@ $(function () {
     position: 'bottom',
     enterDelay: 600
   });
-  $(window).scroll(function() {
-    animateElements();
-  })
+  AOS.init();
 });
-
-function animateElements() {
-  $('.animated').each(function(i) {
-    const objectBottom = $(this).position().top + 200;
-    const windowBottom = $(window).scrollTop() + $(window).height();
-    if (objectBottom < windowBottom) {
-      $(this).removeClass('animated', 500);
-    }
-  })
-}
 
 function copyText($this) {
   const $temp = $('<input>');
@@ -52,6 +40,7 @@ function SetPushPin() {
 $(window).resize(function () {
   SetPushPin();
   $('.parallax').parallax();
+  AOS.refresh();
 });
 
 $('#scroll-top').click(function () {
