@@ -20,6 +20,9 @@ Floating button gives a few extra options like side menu with contact details wh
 * I wish to introduce the animations as I already have some experience with them as soon as I will have some time.    
 * The color palette might not be the best, I wish to improve on it at some point, for now I only wanted things to be clean and readable.    
 * Footer needs some more work, there is still room for more information.    
+### Update    
+* Color palete has been slightly tweaked    
+* Animations has been added
 ## Built with
 * [Visual Studio Code](https://code.visualstudio.com/)    
 * [MaterializeCSS](https://materializecss.com/)    
@@ -31,6 +34,7 @@ Floating button gives a few extra options like side menu with contact details wh
 * [W3Schools](https://www.w3schools.com/)
 * [StackOverflow](https://stackoverflow.com/)
 * [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+* [Animate on scroll](https://github.com/michalsnik/aos)
 ## Contact me
 Pawel Nawoj  
 See my [GitHub Profile](https://github.com/PavN93)    
