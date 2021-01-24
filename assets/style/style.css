@@ -5,6 +5,10 @@ html, body {
   box-sizing: border-box;
 }
 
+.responsive-img {
+  filter: brightness(80%);
+}
+
 .profile-icon {
   margin-top: 30vh;
   border-radius: 50%;
@@ -17,8 +21,19 @@ h1, h6 {
 }
 
 .bio-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid steelblue;
+  border-radius: 30px;
+}
+
+.port-container {
+  padding: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid lightsteelblue;
+  border-radius: 20px;
 }
 
 .bio {
@@ -77,6 +92,7 @@ h1, h6 {
 
 .block {
   min-height: 20vh;
+  transition: all 1s ease;
 }
 
 .pin-top {
@@ -94,15 +110,24 @@ h1, h6 {
   z-index: 9;
 }
 
-.slides {
-  margin: auto;
-  width: 80vw;
+.card {
+  border-radius: 20px;
+}
+
+.card-image {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
 }
 
 .btn-small {
   width: 145px;
 }
-
 
 /* Materialize styling end */
 
@@ -118,14 +143,32 @@ footer {
   color: #fff3e0 !important;
 }
 
+.animated {
+  opacity: 0;
+  transition: all 1s ease;
+  transition-timing-function: ease;
+}
+
 @media only screen and (max-width: 600px) {
   .profile-icon {
     width: 50vw;
   }
+
   h1 {
     font-size: 3em;
   }
 
+  .bio-container {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .port-container {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 @media only screen and (max-width: 450px) {
   #about img {
@@ -140,5 +183,9 @@ footer {
 
   .more-heading {
     text-align: center;
+  }
+
+  .bio-container {
+    padding: 35px;
   }
 }
